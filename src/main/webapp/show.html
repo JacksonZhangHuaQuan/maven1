@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+
+<header>
+
+</header>
+
+<section class="center-block show_message" >
+
+    <ul class="nav nav-pills show_ul" role="tablist">
+        <li role="presentation"><a href="#">Home <span class="badge">99+</span></a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation" class="active"><a href="#">Messages <span class="badge">3</span></a></li>
+    </ul>
+
+    <div class="panel panel-primary message" id="0">
+        <div class="user_info">
+            <span class="name">Name</span>
+            <span class="uid">ID</span>
+        </div>
+        <div class="message_info">
+
+        </div>
+        <div class="send_time">
+            <span class="send_time_span1">datetime</span>
+        </div>
+    </div>
+
+
+    <div class="change_page">
+        <span class="prev_page">上一页</span>
+        <span class="next_page">下一页</span>
+    </div>
+
+
+    <div class="panel panel-info send_message">
+        <form class="my_form">
+            <input name="user" class="input-sm input_name" type="text" placeholder="Name"/>
+            <br/>
+            <textarea name="input_text" class="input_info"></textarea>
+            <button class="btn-success my_btn" type="submit">Send</button>
+        </form>
+    </div>
+</section>
+
+
+<footer>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+        $(function(){
+            $(".filter_btn").click(function(){
+                var input = $(".filter_input").val();
+                $.ajax({
+                    url:"http://localhost:8080/CharsetFilter",
+                    type:"get",
+                    data:{"msg":input},
+                    dataType:"text",
+                    success: function (result) {
+                        if(result=="1"){
+                            console.log("success");
+                        }
+                    }
+                })
+            });
+
+        });
+    </script>
+</head>
+<body>
+<form>
+    <input type="text" class="filter_input"/>
+    <button type="submit" class="filter_btn">提交</button>
+</form>
+
+</body>
+</html>
